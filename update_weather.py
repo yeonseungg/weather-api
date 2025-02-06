@@ -2,13 +2,14 @@ import requests
 import os
 from datetime import datetime
 
-# OpenWeather API 키: 31563b64da6452ee368abb8f9e78d807
+# OpenWeather API 키
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 CITY = "Seoul"
 URL = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 
 # README 파일 경로
 README_PATH = "README.md"
+
 
 def get_weather():
     """OpenWeather API를 호출하여 서울의 날씨 데이터를 가져옴"""
@@ -46,4 +47,3 @@ def update_readme():
 
 if __name__ == "__main__":
     update_readme()
-
