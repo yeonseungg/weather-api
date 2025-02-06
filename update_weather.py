@@ -1,6 +1,9 @@
 import requests
 import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # OpenWeather API 키
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
