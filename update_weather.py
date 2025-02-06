@@ -1,10 +1,9 @@
 import requests
 import os
 from datetime import datetime
-from dotenv import load_env
 
 # OpenWeather API 키: 31563b64da6452ee368abb8f9e78d807
-API_KEY = os.getenv("C")
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 CITY = "Seoul"
 URL = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 
